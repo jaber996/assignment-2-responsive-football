@@ -1,0 +1,321 @@
+/* ------fonts------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+/* <!-- header start --> */
+.header-area{
+    background-color: #81204c;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10%;
+}
+.header-item h1{
+    margin-top: 0;
+    font-size: 64px;
+    color:white;
+}
+.header-item button {
+    background-image: linear-gradient(#f776aebe,#81204ca8 );
+    border: none;
+    width: 168px;
+    height: 44px;
+    font-weight: bold;
+    color: white;
+
+}
+.header-item button:hover{
+    background-color: #ec2f84;
+    transition: 0.2s;  
+}
+.header-item a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.header-item img{
+    width: 556.01px;
+    height: 438px;
+}
+.header-item:hover img{
+    transform: scale(1.1) rotate(1deg);
+    transition: transform 1.30s ease-in-out;
+}
+/* <!-- header end --> */
+
+/* common utilities or style */
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.container{
+    width: 1100px;
+    margin-top: 40px;
+    padding-top: 40px;
+}
+
+/* <!-- top player and all blogs start--> */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    grid-row-gap: 35px;
+    
+}
+.player{
+    box-shadow: -10px -10px 50px -5px  #81204c3a;
+    background-color: white;
+    width: 300px;
+    height: 430px;
+    padding: 15px;
+}
+.player img{ 
+    width: 300px;
+    height: 256px;
+
+}
+.player h3{
+    width: 300px;
+    font-size: 28px;
+    margin:10px 0px;
+
+}
+.player p{
+    color: #6C6C6C;
+    width: 300px;
+    font-size: 16px;
+    text-align: justify;
+    /* <!-- top player and all blogs end--> */
+}
+
+/* <!-- bonus-content part one--> */
+.content-item{
+    position: relative;
+    text-align: center;
+    padding-bottom: 10px;  
+}
+.content-item button{
+    width: 168px;
+    height: 44px;
+    border: none;
+    background-color: #81204c;
+}
+.content-item button:hover{
+    background-color: #ec2f84;
+    transition: 0.2s;  
+}
+.content-item a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.content-item hr{
+    border: 2px solid #81204c;
+}
+
+
+/* <!-- bonus-content part two--> */
+.content{
+    padding-top: 40px;
+    text-align: center;
+}
+.content img{
+    width: 250px;
+    height: 100px;
+}
+
+.content p{
+    color: #6C6C6C;
+}
+.bonus-content{
+    justify-content: center;
+}
+.content-1 img{
+    width: 300px;
+    width: 150px;
+}
+.content-items{
+    text-align: center;
+}
+
+.content-fild{
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.content-1{
+    padding: 20px;
+}
+.content-1 p{
+    color: #6C6C6C;
+    font-size: 15px;
+}
+/* <!-- footer section start--> */
+.footer-container{
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+.footer-item{
+    display: flex;
+    justify-content: center;
+}
+.footer-item img{
+    width: 483.87px;
+    height: 110px;
+}
+.footer-item a{
+    padding: 10px;
+}
+.fab, .fa-basketball-ball {
+    font-size: 25px;
+    padding: 15px;
+    color: #969BAB;
+    background-color: #81204c1f;
+    border-radius: 100%;
+}
+.copyright{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+/* <!-- footer section end--> */
+
+
+/* ------------Media Queries------------- */
+
+/* Mobile Devices */
+
+@media only screen and (max-width:688px){
+    /* <!-- header start --> */
+    .header-fild{
+        width: 100%;
+    }
+    .header-area{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+    }
+    .header-item{
+        padding: 20px;
+        text-align: center;
+    }
+    .header-item h1{
+        font-size: 60px;
+    }
+    .header-area img{
+       width: 350px;
+       width: 100%;
+    }
+
+    /* top player and all blogs */
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* <!-- bonus-content part one--> */
+    .content-part-one{
+        width: 100%;
+    }
+
+    /* <!-- bonus-content part two--> */
+    .content-fild, .content-1{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .content-1{
+        padding-bottom: 0;
+    }
+
+    /* <!-- footer section --> */
+    .footer-container{
+        margin-top: 80px;
+        width: 100%;
+    }
+    .footer-item img{      
+        width: 250px;
+        height: 80px;
+    }
+    .footer-item{
+        flex-direction: row;
+        align-items: center;
+    }
+    .footer-item, .fa-basketball-ball, .fab{
+        font-size: 20px;
+    }
+}
+
+/* ------------Media Queries------------- */
+
+/* ---tablet devices--- */
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+    /* <!-- header start --> */
+    .header-fild{
+        width: 100%;
+    }
+    .header-area{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+        align-items: center;
+    }
+    .header-item{
+        padding: 20px;
+        text-align: center;
+    }
+    .header-item h1{
+        font-size: 50px;
+    }
+    .header-area img{
+       width: 420px;
+       padding: 20px;
+    }
+
+    /* top player and all blogs */
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* <!-- bonus-content part one--> */
+    .content-part-one{
+        width: 100%;
+    }
+
+    /* <!-- bonus-content part two--> */
+    .content-fild{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+    
+    /* <!-- footer section --> */
+    .footer-container{
+        margin-top: 80px;
+        width: 100%;
+    }
+    .footer-item img{      
+        width: 485px;
+        height: 110px;
+    }
+    .footer-item{
+        flex-direction: row;
+        align-items: center;
+    }
+    .footer-item, .fa-basketball-ball, .fab{
+        font-size: 20px;
+    }
+}
+
+        
+                                            /* ---------Thank you Programing Hero---------- */
